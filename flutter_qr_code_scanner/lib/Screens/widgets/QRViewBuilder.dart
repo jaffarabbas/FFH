@@ -29,6 +29,7 @@ class _QrViewBuilderState extends State<QrViewBuilder> {
     }
     qrViewController!.resumeCamera();
   }
+
   void OnQrCreated(QRViewController qrViewController){
     setState(() {
       this.qrViewController = qrViewController;
@@ -40,6 +41,7 @@ class _QrViewBuilderState extends State<QrViewBuilder> {
       });
     });
   }
+  
   @override
   Widget build(BuildContext context) {
     return Stack(
