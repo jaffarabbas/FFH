@@ -32,8 +32,6 @@ class _CameraScreenState extends State<CameraScreen> {
         onVideoRecorded: (value) {
           final path = value.path;
           print('::::::::::::::::::::::::;; dkdkkd $path');
-
-          ///Show video preview .mp4
         },
       ),
     );

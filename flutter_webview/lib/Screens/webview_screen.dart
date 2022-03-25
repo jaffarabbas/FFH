@@ -21,20 +21,20 @@ class _WebViewScreenState extends State<WebViewScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return WebviewScaffold(
-      hidden: true,
-      withZoom: true,
-      appBar: AppBar(
-        title: Text('WebView'),
-      ),
-      url: "https://web.whatsapp.com/",
-    );
-    // return Scaffold(
-    //   appBar: AppBar(title: Text('WebView'),),
-    //   body: const WebView(
-    //     javascriptMode: JavascriptMode.unrestricted,
-    //     initialUrl: 'https://web.whatsapp.com/',
-    //  ),
+    // return WebviewScaffold(
+    //   hidden: true,
+    //   withZoom: true,
+    //   appBar: AppBar(
+    //     title: Text('WebView'),
+    //   ),
+    //   url: "https://www.amazon.com/",
     // );
+    return Scaffold(
+      appBar: AppBar(title: Text('WebView'),),
+      body: const WebView(
+        javascriptMode: JavascriptMode.unrestricted,
+        initialUrl: "https://web.whatsapp.com/",
+     ),
+    );
   }
 }
